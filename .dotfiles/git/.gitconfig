@@ -1,0 +1,9 @@
+[user]
+	email = 33674612+lorekkusu@users.noreply.github.com
+	name = YuHung Lo
+[commit]
+	gpgsign = true
+[tag]
+	forceSignAnnotated = true
+[include]
+  path = ~/.gitgpg
