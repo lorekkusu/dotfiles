@@ -25,3 +25,9 @@ for dotfile_source in $(find "$(pwd)/$directory_dotfiles" -type f); do
     # create symlinks
     ln -sv $dotfile_source $dotfile_target
 done
+
+# install oh-my-zsh
+if [ -z "$ZSH" ]
+then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc
+fi
