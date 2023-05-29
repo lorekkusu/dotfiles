@@ -25,3 +25,35 @@ for dotfile_source in $(find "$(pwd)/$directory_dotfiles" -type f); do
     # create symlinks
     ln -sv $dotfile_source $dotfile_target
 done
+
+
+
+
+# install zsh
+if [ "$(uname)" == "Darwin" ]; then
+    brew install zsh
+else
+    sudo apt install zsh
+fi
+
+# install pyenv
+curl https://pyenv.run | bash
+
+# install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+
+# install oh-my-zsh
+rm -rf ~/.oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc --unattended
+
+# install oh-my-zsh plugins
+if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions" ]; then
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+fi
+if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting" ]; then
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+fi
+
+# change shell
+sudo chsh -s /bin/zsh $USER
+zsh
