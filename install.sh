@@ -47,8 +47,10 @@ echo ""
 echo "=================================================="
 echo "================Setting up pyenv=================="
 echo "=================================================="
-unset PYENV_ROOT
-curl -fsSL https://pyenv.run | bash
+if [ ! -d "$HOME/.pyenv" ]; then
+    unset PYENV_ROOT
+    curl -fsSL https://pyenv.run | bash
+fi
 
 # install nvm
 echo ""
@@ -56,9 +58,11 @@ echo ""
 echo "=================================================="
 echo "==================Setting up nvm=================="
 echo "=================================================="
-unset NVM_DIR
-export PROFILE="/dev/null"
-curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+if [ ! -d "$HOME/.nvm" ]; then
+    unset NVM_DIR
+    export PROFILE="/dev/null"
+    curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+fi
 
 # install poetry
 echo ""
@@ -66,7 +70,9 @@ echo ""
 echo "=================================================="
 echo "================Setting up poetry================="
 echo "=================================================="
-curl -fsSL https://install.python-poetry.org | python3
+if [ ! -d "$HOME/.local/share/pypoetry" ]; then
+    curl -fsSL https://install.python-poetry.org | python3
+fi
 
 # install oh-my-zsh
 echo ""
@@ -74,11 +80,13 @@ echo ""
 echo "=================================================="
 echo "================Setting up oh-my-zsh=============="
 echo "=================================================="
-rm -rf ~/.oh-my-zsh
-export CHSH=no
-export RUNZSH=no
-export KEEP_ZSHRC=yes
-curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    rm -rf ~/.oh-my-zsh
+    export CHSH=no
+    export RUNZSH=no
+    export KEEP_ZSHRC=yes
+    curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
+fi
 
 # install oh-my-zsh plugins
 echo ""
@@ -86,8 +94,12 @@ echo ""
 echo "=================================================="
 echo "================Setting up plugins================"
 echo "=================================================="
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions" ]; then
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+fi
+if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting" ]; then
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+fi
 
 # change shell
 sudo chsh "$(id -un)" -s $(which zsh) 
