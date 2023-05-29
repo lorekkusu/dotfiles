@@ -22,3 +22,11 @@ for dotfile_backup in $(find $HOME/$directory_backup -type f); do
     mv -v $dotfile_backup $dotfile_target
 done
 rm -rf $HOME/$directory_backup
+
+
+
+
+rm -rf $HOME/.pyenv
+rm -rf $HOME/.nvm
+rm -rf $HOME/.local/share/pypoetry
+rm -rf $HOME/.oh-my-zsh

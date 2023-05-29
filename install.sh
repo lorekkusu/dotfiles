@@ -30,32 +30,65 @@ done
 
 
 # install zsh
+echo ""
+echo ""
+echo "=================================================="
+echo "================Setting up zsh===================="
+echo "=================================================="
 if [ "$(uname)" == "Darwin" ]; then
     brew install zsh
 else
-    sudo apt install zsh
+    sudo apt install zsh -y
 fi
 
 # install pyenv
-curl https://pyenv.run | bash
+echo ""
+echo ""
+echo "=================================================="
+echo "================Setting up pyenv=================="
+echo "=================================================="
+unset PYENV_ROOT
+curl -fsSL https://pyenv.run | bash
 
 # install nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+echo ""
+echo ""
+echo "=================================================="
+echo "==================Setting up nvm=================="
+echo "=================================================="
+unset NVM_DIR
+export PROFILE="/dev/null"
+curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 
 # install poetry
-curl -sSL https://install.python-poetry.org | python3 -
+echo ""
+echo ""
+echo "=================================================="
+echo "================Setting up poetry================="
+echo "=================================================="
+curl -fsSL https://install.python-poetry.org | python3
 
 # install oh-my-zsh
+echo ""
+echo ""
+echo "=================================================="
+echo "================Setting up oh-my-zsh=============="
+echo "=================================================="
 rm -rf ~/.oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc --unattended
+export CHSH=no
+export RUNZSH=no
+export KEEP_ZSHRC=yes
+curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
 
 # install oh-my-zsh plugins
-if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions" ]; then
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-fi
-if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting" ]; then
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-fi
+echo ""
+echo ""
+echo "=================================================="
+echo "================Setting up plugins================"
+echo "=================================================="
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # change shell
 sudo chsh "$(id -un)" -s $(which zsh) 
+source ~/.bashrc
