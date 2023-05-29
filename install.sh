@@ -103,4 +103,3 @@ fi
 
 # change shell
 sudo chsh "$(id -un)" -s $(which zsh) 
-source ~/.bashrc
