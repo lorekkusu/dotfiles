@@ -55,5 +55,4 @@ if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting" ]
 fi
 
 # change shell
-sudo chsh -s /bin/zsh $USER
-zsh
+sudo chsh "$(id -un)" -s $(which zsh) 
