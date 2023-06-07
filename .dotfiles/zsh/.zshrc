@@ -1,4 +1,15 @@
 ###
+### platform
+###
+if [[ $(uname) == "Linux" ]]; then
+
+elif [[ $(uname) == "Darwin" ]]; then
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+
+fi
+
+###
 ### oh my zsh
 ###
 export ZSH="$HOME/.oh-my-zsh"
