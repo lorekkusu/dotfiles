@@ -15,8 +15,8 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 
 # fvm
-export FVM_HOME="$HOME/fvm"
-export PATH="$FVM_HOME/default/bin:$PATH"
+export FVM_CACHE_PATH="$HOME/fvm"
+export PATH="$FVM_CACHE_PATH/default/bin:$PATH"
 
 # firebase
 export PATH="$HOME/.pub-cache/bin:$PATH"
