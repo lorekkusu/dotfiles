@@ -14,16 +14,6 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 # nvm
 export NVM_DIR="$HOME/.nvm"
 
-# fvm
-export FVM_CACHE_PATH="$HOME/fvm"
-export PATH="$FVM_CACHE_PATH/default/bin:$PATH"
-
-# firebase
-export PATH="$HOME/.pub-cache/bin:$PATH"
-
 # android
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="$ANDROID_HOME/tools/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"
-
-# ruby
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
