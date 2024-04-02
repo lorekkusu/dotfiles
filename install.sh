@@ -6,6 +6,9 @@ echo "Detected platform: $PLATFORM"
 if [[ $PLATFORM == 'Darwin' ]]; then
     echo "macOS detected"
     source macos.sh
+elif [[ $PLATFORM == 'Linux' ]]; then
+    echo "Linux detected"
+    source linux.sh
 else
     echo "Unsupported platform"
     exit 1
