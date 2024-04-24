@@ -2,7 +2,7 @@
 
 # oh-my-zsh
 ZSH_THEME="robbyrussell"
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # pyenv
