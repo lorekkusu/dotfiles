@@ -17,3 +17,8 @@ fi
 # Link dotfiles (any)
 echo "Linking dotfiles (any)"
 ln -svf $PWD/any/.gitconfig $HOME/.gitconfig
+
+# Link others
+echo "Linking others"
+ln -svf $PWD/iterm $HOME/.iterm
+ln -svf $PWD/nvim $HOME/.config/nvim
