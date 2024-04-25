@@ -1,4 +1,5 @@
 # alias
+alias vim="nvim"
 
 # oh-my-zsh
 ZSH_THEME="robbyrussell"
