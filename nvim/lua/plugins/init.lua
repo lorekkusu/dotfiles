@@ -1,13 +1,11 @@
 return {
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre",
     config = function()
       require "configs.conform"
     end,
   },
-
-  -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -15,30 +13,16 @@ return {
       require "configs.lspconfig"
     end,
   },
-
   {
-  	"williamboman/mason.nvim",
-  	opts = {
-  		ensure_installed = {
-  			"lua-language-server",
-        "rust-analyzer",
-        "gopls",
-        "pyright",
-        "typescript-language-server",
-  		},
-  	},
+    "williamboman/mason.nvim",
+    opts = function()
+      return require "configs.mason"
+    end,
   },
-
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
-        "lua",
-        "rust",
-        "go",
-        "python",
-        "javascript", "typescript",
-  		},
-  	},
+    "nvim-treesitter/nvim-treesitter",
+    opts = function()
+      return require "configs.treesitter"
+    end,
   },
 }
