@@ -2,7 +2,15 @@
 
 # oh-my-zsh
 ZSH_THEME="robbyrussell"
-plugins=(zsh-syntax-highlighting ssh-agent)
+plugins=(
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+  zsh-autocomplete
+  gitignore
+  ssh-agent
+  colored-man-pages
+  poetry-env
+)
 zstyle :omz:plugins:ssh-agent identities id_ed25519
 zstyle :omz:plugins:ssh-agent lifetime 24h
 source $ZSH/oh-my-zsh.sh

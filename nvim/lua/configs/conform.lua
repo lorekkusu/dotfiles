@@ -3,7 +3,7 @@ local options = {
     lua = { "stylua" },
     rust = { "rustfmt" },
     go = { "goimports" },
-    python = { "black" },
+    python = { "ruff_format" },
     javascript = { "prettier" },
   },
   format_on_save = {

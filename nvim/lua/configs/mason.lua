@@ -3,12 +3,13 @@ local options = {
     -- Formatter
     "stylua",
     "goimports",
-    "black",
+    -- "black",
     "prettier",
     -- LSP
     "lua-language-server",
     "rust-analyzer",
     "gopls",
+    "ruff",
     "pyright",
     "typescript-language-server",
   },
