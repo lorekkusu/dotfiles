@@ -6,12 +6,21 @@ local capabilities = configs.capabilities
 
 local lspconfig = require "lspconfig"
 local servers = {
-  "lua_ls",
-  "rust_analyzer",
+  -- Lua
+  -- "lua_ls", -- Disabled (use nvchad)
+
+  -- Rust
+  -- "rust_analyzer", -- Disabled (manually setup)
+
+  -- Go
   "gopls",
-  "ruff",
+
+  -- Python
   "pyright",
+
+  -- JavaScript & TypeScript
   "tsserver",
+  "tailwindcss",
 }
 
 for _, lsp in ipairs(servers) do
@@ -21,3 +30,13 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+lspconfig.rust_analyzer.setup {
+  settings = {
+    ["rust-analyzer"] = {
+      check = {
+        command = "clippy", -- default: check
+      },
+    },
+  },
+}

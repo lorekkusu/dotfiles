@@ -1,10 +1,12 @@
 local options = {
   formatters_by_ft = {
-    lua = { "stylua" },
     rust = { "rustfmt" },
+
+    lua = { "stylua" },
     go = { "goimports" },
-    python = { "ruff_format" },
+    python = { "isort", "black" },
     javascript = { "prettier" },
+    typescript = { "prettier" },
   },
   format_on_save = {
     timeout_ms = 500,

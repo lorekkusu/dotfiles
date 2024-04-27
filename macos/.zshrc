@@ -10,12 +10,15 @@
 # oh-my-zsh
 ZSH_THEME="robbyrussell"
 plugins=(
+  brew
   zsh-syntax-highlighting
   zsh-autosuggestions
   zsh-autocomplete
   git
   gitignore
   git-extras
+  git-commit
+  git-auto-fetch
   extract
   ssh-agent
   colored-man-pages
