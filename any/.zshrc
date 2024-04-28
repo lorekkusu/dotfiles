@@ -14,6 +14,8 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   zsh-autocomplete
+  z
+  jump
   git
   gitignore
   git-extras

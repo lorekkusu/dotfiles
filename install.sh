@@ -46,3 +46,4 @@ ln -svf $PWD/any/.zshrc $HOME/.zshrc
 echo "Linking others"
 ln -svf $PWD/iterm $HOME/.config/iterm
 ln -svf $PWD/nvim $HOME/.config/nvim
+ln -svf $PWD/tmux $HOME/.config/tmux
