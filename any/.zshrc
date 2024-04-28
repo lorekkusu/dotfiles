@@ -1,4 +1,5 @@
 # alias
+alias j="jump"
 
 # pyenv
 # eval "$(pyenv init -)"
