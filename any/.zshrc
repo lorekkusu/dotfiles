@@ -9,6 +9,8 @@
 
 # oh-my-zsh
 ZSH_THEME="robbyrussell"
+ZSH_TMUX_AUTOSTART="true"
+ZSH_TMUX_AUTONAME_SESSION="true"
 plugins=(
   brew
   zsh-syntax-highlighting
@@ -16,6 +18,7 @@ plugins=(
   zsh-autocomplete
   z
   jump
+  tmux
   git
   gitignore
   git-extras
