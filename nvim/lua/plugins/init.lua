@@ -51,4 +51,23 @@ return {
       return require "configs.treesitter"
     end,
   },
+  {
+    "nvim-lua/plenary.nvim",
+  },
+  {
+    "epwalsh/obsidian.nvim",
+    version = "*",
+    ft = "markdown",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    opts = {
+      workspaces = {
+        {
+          name = "ob1",
+          path = "~/vaults/ob1",
+        },
+      },
+    },
+  },
 }
