@@ -7,7 +7,7 @@ local options = {
 
     -- Rust
     "rust-analyzer", --LSP
-    -- "clippy", -- Linter (use cargo)
+    -- "clippy", --Linter (use cargo)
     -- "rustfmt", --Formatter (use cargo)
     "codelldb", --DAP
 
@@ -22,12 +22,18 @@ local options = {
     "flake8", --Linter
     "isort", --Formatter
     "black", --Formatter
+    "debugpy", --DAP
 
     -- JavaScript & TypeScript
     "typescript-language-server", --LSP
     "tailwindcss-language-server", --LSP
-    "eslint-lsp", -- Linter
-    "prettier", -- Formatter
+    "eslint-lsp", --Linter
+    "prettier", --Formatter
+
+    -- terraform
+    "terraform-ls", --LSP
+    "tflint", --Linter
+    -- "terraform_fmt", --Formatter (use cli)
   },
 }
 

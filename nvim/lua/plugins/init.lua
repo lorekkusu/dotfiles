@@ -1,15 +1,29 @@
 return {
   {
     "mrcjkb/rustaceanvim",
+    ft = "rust",
     dependencies = "rcarriga/nvim-dap-ui",
     lazy = false,
   },
   {
     "leoluz/nvim-dap-go",
+    ft = "go",
     dependencies = "rcarriga/nvim-dap-ui",
     config = function(_, opts)
       require("dap-go").setup(opts)
     end,
+  },
+  {
+    "mfussenegger/nvim-dap-python",
+    ft = "python",
+    dependencies = "rcarriga/nvim-dap-ui",
+    config = function()
+      local path = "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
+      require("dap-python").setup(path)
+    end,
+  },
+  {
+    "",
   },
   {
     "mfussenegger/nvim-dap",

@@ -21,6 +21,9 @@ local servers = {
   -- JavaScript & TypeScript
   "tsserver",
   "tailwindcss",
+
+  -- Terraform
+  "terraformls",
 }
 
 for _, lsp in ipairs(servers) do
