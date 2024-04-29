@@ -9,6 +9,7 @@ local options = {
     "rust-analyzer", --LSP
     -- "clippy", -- Linter (use cargo)
     -- "rustfmt", --Formatter (use cargo)
+    "codelldb", --DAP
 
     -- Go
     "gopls", --LSP

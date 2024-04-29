@@ -10,7 +10,7 @@ local servers = {
   -- "lua_ls", -- Disabled (use nvchad)
 
   -- Rust
-  -- "rust_analyzer", -- Disabled (manually setup)
+  -- "rust_analyzer", -- Disabled (manually setup (x) -> configured by mrcjkb/rustaceanvim)
 
   -- Go
   "gopls",
@@ -31,12 +31,12 @@ for _, lsp in ipairs(servers) do
   }
 end
 
-lspconfig.rust_analyzer.setup {
-  settings = {
-    ["rust-analyzer"] = {
-      check = {
-        command = "clippy", -- default: check
-      },
-    },
-  },
-}
+-- lspconfig.rust_analyzer.setup {
+--   settings = {
+--     ["rust-analyzer"] = {
+--       check = {
+--         command = "clippy", -- default: check
+--       },
+--     },
+--   },
+-- }

@@ -25,10 +25,11 @@
   "nvim-lspconfig": { "branch": "master", "commit": "3224b099845c24ca456d1e77a9268a788f106f0b" },
   "nvim-nio": { "branch": "master", "commit": "7fa5545299fc7a48d5ec74d27f414b862060095f" },
   "nvim-tree.lua": { "branch": "master", "commit": "5a18b9827491aa1aea710bc9b85c6b63ed0dad14" },
-  "nvim-treesitter": { "branch": "master", "commit": "19f69a5b434470723c32311cdc4d8d0e8db76358" },
-  "nvim-web-devicons": { "branch": "master", "commit": "4f499a0e8cd64faa29b89446bdadde070dc0d397" },
+  "nvim-treesitter": { "branch": "master", "commit": "c3ab6a59039293cc27cea8a07e74c2d0ce28e36c" },
+  "nvim-web-devicons": { "branch": "master", "commit": "794bba734ec95eaff9bb82fbd112473be2087283" },
   "obsidian.nvim": { "branch": "main", "commit": "b1bfc2ad9172f0405bf6c21e1f63cfb73f79b480" },
   "plenary.nvim": { "branch": "master", "commit": "08e301982b9a057110ede7a735dd1b5285eb341f" },
+  "rustaceanvim": { "branch": "master", "commit": "cd35b0f7fb0c9fe6879b084096230a74fefa4da8" },
   "telescope.nvim": { "branch": "master", "commit": "35f94f0ef32d70e3664a703cefbe71bd1456d899" },
   "ui": { "branch": "v2.5", "commit": "525b0767cb19260adb256910e6d4c5715529ad3e" },
   "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
