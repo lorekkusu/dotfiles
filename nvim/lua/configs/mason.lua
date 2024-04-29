@@ -14,6 +14,7 @@ local options = {
     "gopls", --LSP
     "golangci-lint", --Linter
     "goimports", --Formatter
+    "delve", --DAP
 
     -- Python
     "pyright", --LSP
