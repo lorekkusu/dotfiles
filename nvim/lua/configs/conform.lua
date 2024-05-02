@@ -7,7 +7,7 @@ local options = {
     javascript = { "prettier" },
     typescript = { "prettier" },
     terraform = { "terraform_fmt" },
-    yaml = { "yamlfmt", "yamlfix" },
+    yaml = { "yamlfmt" },
   },
   format_on_save = {
     timeout_ms = 500,
