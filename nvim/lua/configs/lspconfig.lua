@@ -24,6 +24,9 @@ local servers = {
 
   -- Terraform
   "terraformls",
+
+  -- Yaml
+  "yamlls",
 }
 
 for _, lsp in ipairs(servers) do

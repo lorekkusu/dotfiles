@@ -30,10 +30,15 @@ local options = {
     "eslint-lsp", --Linter
     "prettier", --Formatter
 
-    -- terraform
+    -- Terraform
     "terraform-ls", --LSP
     "tflint", --Linter
     -- "terraform_fmt", --Formatter (use cli)
+
+    -- Yaml
+    "yaml-language-server", --LSP
+    "yamllint", --Linter
+    "yamlfmt", --Formatter
   },
 }
 
