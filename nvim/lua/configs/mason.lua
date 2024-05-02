@@ -39,6 +39,7 @@ local options = {
     "yaml-language-server", --LSP
     "yamllint", --Linter
     "yamlfmt", --Formatter
+    "yamlfix", --Formatter
   },
 }
 
