@@ -17,35 +17,36 @@ ZSH_TMUX_AUTOQUIT="false"
 ZSH_TMUX_AUTONAME_SESSION="true"
 ZSH_TMUX_UNICODE="true"
 plugins=(
-  brew
-  zsh-syntax-highlighting
-  zsh-autosuggestions
-  zsh-autocomplete
-  z
-  jump
-  tmux
-  git
-  gitignore
-  git-extras
-  git-commit
-  git-auto-fetch
-  extract
-  ssh-agent
-  colored-man-pages
-  gcloud
-  docker
-  minikube
-  kubectl
-  helm
-  terraform
   ansible
+  brew
+  colored-man-pages
+  deno
+  docker
+  extract
+  gcloud
+  git
+  git-auto-fetch
+  git-commit
+  git-extras
+  gitignore
+  golang
+  helm
+  jump
+  kubectl
+  minikube
+  nvm
   poetry
   poetry-env
   pyenv
   rust
-  golang
-  nvm
-  deno
+  ssh-agent
+  terraform
+  tmux
+  yarn
+  z
+  zsh-autocomplete
+  zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 zstyle :omz:plugins:ssh-agent identities id_ed25519
 zstyle :omz:plugins:ssh-agent lifetime 24h

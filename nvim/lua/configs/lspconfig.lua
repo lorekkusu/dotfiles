@@ -21,6 +21,7 @@ local servers = {
   -- JavaScript & TypeScript
   "tsserver",
   "tailwindcss",
+  "eslint",
 
   -- Terraform
   "terraformls",

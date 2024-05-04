@@ -6,8 +6,6 @@ lint.linters_by_ft = {
   lua = { "luacheck" },
   go = { "golangcilint" },
   python = { "flake8" },
-  javascript = { "eslint" },
-  typescript = { "eslint" },
   terraform = { "tflint" },
   yaml = { "yamllint" },
 }
