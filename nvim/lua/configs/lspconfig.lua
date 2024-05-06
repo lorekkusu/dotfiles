@@ -10,7 +10,7 @@ local servers = {
   -- "lua_ls", -- Disabled (use nvchad)
 
   -- Rust
-  -- "rust_analyzer", -- Disabled (manually setup (x) -> configured by mrcjkb/rustaceanvim)
+  -- "rust_analyzer", -- Disabled (configured by mrcjkb/rustaceanvim)
 
   -- Go
   "gopls",
@@ -21,7 +21,7 @@ local servers = {
   -- JavaScript & TypeScript
   "tsserver",
   "tailwindcss",
-  "eslint",
+  -- "eslint", -- Disabled (manually setup)
 
   -- Terraform
   "terraformls",
@@ -38,12 +38,14 @@ for _, lsp in ipairs(servers) do
   }
 end
 
--- lspconfig.rust_analyzer.setup {
---   settings = {
---     ["rust-analyzer"] = {
---       check = {
---         command = "clippy", -- default: check
---       },
---     },
---   },
--- }
+lspconfig.eslint.setup {
+  on_attach = function(client, bufnr)
+    on_attach(client, bufnr)
+    vim.api.nvim_create_autocmd("BufWritePre", {
+      buffer = bufnr,
+      command = "EslintFixAll",
+    })
+  end,
+  on_init = on_init,
+  capabilities = capabilities,
+}
