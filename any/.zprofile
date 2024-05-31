@@ -14,3 +14,7 @@ eval "$(pyenv init --path)"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
+
+# Wasm
+export WASMEDGE_DIR=$(brew --prefix wasmedge)
+
