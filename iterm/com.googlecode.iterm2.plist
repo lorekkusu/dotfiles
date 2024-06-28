@@ -10,9 +10,15 @@
 	<true/>
 	<key>Default Bookmark Guid</key>
 	<string>7C3FCF3E-0C75-479E-8CD6-735A95AD0414</string>
+	<key>FlashTabBarInFullscreen</key>
+	<false/>
+	<key>HTMLTabTitles</key>
+	<false/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideScrollbar</key>
+	<true/>
+	<key>HideTab</key>
 	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
@@ -1565,6 +1571,8 @@
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
 	<true/>
+	<key>OpenTmuxWindowsIn</key>
+	<integer>0</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1598,6 +1606,8 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>SeparateStatusBarsPerPane</key>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>StatusBarPosition</key>
@@ -1606,8 +1616,12 @@
 	<integer>5</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
+	<key>TmuxSyncClipboard</key>
+	<true/>
+	<key>TmuxUnpauseAutomatically</key>
+	<true/>
 	<key>UseBorder</key>
-	<false/>
+	<true/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>findMode_iTerm</key>
