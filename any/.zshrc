@@ -1,6 +1,7 @@
 export LANG=en_US.UTF-8
 
 # alias
+alias cd="z"
 alias j="jump"
 
 # pyenv
@@ -12,12 +13,11 @@ alias j="jump"
 
 # oh-my-zsh
 ZSH_THEME="robbyrussell"
-ZSH_TMUX_AUTOSTART="false"
-ZSH_TMUX_AUTOQUIT="false"
-ZSH_TMUX_AUTONAME_SESSION="true"
+ZSH_TMUX_AUTOSTART="true"
 ZSH_TMUX_UNICODE="true"
 plugins=(
   ansible
+  autoenv
   brew
   colored-man-pages
   deno
