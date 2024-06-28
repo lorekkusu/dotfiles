@@ -6,6 +6,7 @@ alias j="jump"
 # oh-my-zsh
 ZSH_THEME="robbyrussell"
 ZSH_TMUX_AUTONAME_SESSION="true"
+ZSH_TMUX_ITERM2="true"
 plugins=(
   ansible
   autoenv
