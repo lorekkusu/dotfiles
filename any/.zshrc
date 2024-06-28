@@ -1,7 +1,6 @@
 export LANG=en_US.UTF-8
 
 # alias
-alias cd="z"
 alias j="jump"
 
 # pyenv
