@@ -3,18 +3,9 @@ export LANG=en_US.UTF-8
 # alias
 alias j="jump"
 
-# pyenv
-# eval "$(pyenv init -)"
-
-# nvm
-# [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
-# [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
-
 # oh-my-zsh
 ZSH_THEME="robbyrussell"
-ZSH_TMUX_AUTOSTART="true"
 ZSH_TMUX_AUTONAME_SESSION="true"
-ZSH_TMUX_UNICODE="true"
 plugins=(
   ansible
   autoenv
