@@ -30,7 +30,6 @@ plugins=(
   poetry-env
   pyenv
   rust
-  ssh-agent
   terraform
   tmux
   yarn
@@ -39,6 +38,6 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
-zstyle :omz:plugins:ssh-agent identities id_ed25519
-zstyle :omz:plugins:ssh-agent lifetime 24h
+#zstyle :omz:plugins:ssh-agent identities id_ed25519
+#zstyle :omz:plugins:ssh-agent lifetime 24h
 source $ZSH/oh-my-zsh.sh
