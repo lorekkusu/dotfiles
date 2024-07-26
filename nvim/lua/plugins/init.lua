@@ -23,9 +23,6 @@ return {
     end,
   },
   {
-    "",
-  },
-  {
     "mfussenegger/nvim-dap",
   },
   {

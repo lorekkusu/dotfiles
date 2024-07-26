@@ -27,6 +27,7 @@ local options = {
     -- JavaScript & TypeScript
     "typescript-language-server", --LSP
     "tailwindcss-language-server", --LSP
+    "svelte-language-server", --LSP
     "eslint-lsp", --Linter
     "prettier", --Formatter
 

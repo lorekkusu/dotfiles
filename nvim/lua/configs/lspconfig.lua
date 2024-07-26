@@ -21,6 +21,7 @@ local servers = {
   -- JavaScript & TypeScript
   "tsserver",
   "tailwindcss",
+  "svelte",
   -- "eslint", -- Disabled (manually setup)
 
   -- Terraform
