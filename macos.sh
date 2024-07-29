@@ -11,3 +11,7 @@ fi
 # Install Homebrew bundle
 echo "Installing Homebrew bundle"
 brew bundle install --file=macos/Brewfile
+
+# After Installation
+# TiUP
+mkdir -p ~/.tiup/bin && curl https://tiup-mirrors.pingcap.com/root.json -o ~/.tiup/bin/root.json
