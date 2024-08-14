@@ -21,3 +21,7 @@ export NVM_DIR="$HOME/.nvm"
 # WASI SDK
 # export WASI_SDK_PATH="$HOME/sdk/wasi-sdk-22.0"
 # export CC="${WASI_SDK_PATH}/bin/clang --sysroot=${WASI_SDK_PATH}/share/wasi-sysroot"
+
+# mysql-client
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
