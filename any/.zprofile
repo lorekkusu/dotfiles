@@ -25,3 +25,5 @@ export NVM_DIR="$HOME/.nvm"
 # mysql-client
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
+# ngrok
+eval "$(ngrok completion)"
