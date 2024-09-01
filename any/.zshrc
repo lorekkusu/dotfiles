@@ -1,3 +1,9 @@
+# completion
+autoload -Uz compinit
+compinit
+eval "$(ngrok completion)"
+
+# lang
 export LANG=en_US.UTF-8
 
 # alias
