@@ -24,3 +24,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # mysql-client
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
+# # openssl
+# export OPENSSL_LIB_DIR=$(brew --prefix openssl)/lib
+# export OPENSSL_INCLUDE_DIR=$(brew --prefix openssl)/include
