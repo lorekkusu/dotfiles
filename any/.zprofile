@@ -23,7 +23,7 @@ export NVM_DIR="$HOME/.nvm"
 # export CC="${WASI_SDK_PATH}/bin/clang --sysroot=${WASI_SDK_PATH}/share/wasi-sysroot"
 
 # mysql-client
-export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+export PATH="/opt/homebrew/opt/mysql-client@8.4/bin:$PATH"
 
 # # openssl
 # export OPENSSL_LIB_DIR=$(brew --prefix openssl)/lib
