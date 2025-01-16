@@ -14,11 +14,9 @@ ZSH_THEME="robbyrussell"
 ZSH_TMUX_AUTOSTART="false"
 ZSH_TMUX_AUTONAME_SESSION="true"
 plugins=(
-  ansible
   autoenv
   brew
   colored-man-pages
-  deno
   docker
   extract
   gcloud
@@ -37,7 +35,6 @@ plugins=(
   poetry-env
   pyenv
   rust
-  terraform
   tmux
   yarn
   z
@@ -48,3 +45,4 @@ plugins=(
 #zstyle :omz:plugins:ssh-agent identities id_ed25519
 #zstyle :omz:plugins:ssh-agent lifetime 24h
 source $ZSH/oh-my-zsh.sh
+

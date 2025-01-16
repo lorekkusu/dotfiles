@@ -4,6 +4,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
 
+# local
+export PATH="$HOME/.local/bin:$PATH"
+
 # go
 export PATH="$HOME/go/bin:$PATH"
 
@@ -15,16 +18,6 @@ eval "$(pyenv init --path)"
 # nvm
 export NVM_DIR="$HOME/.nvm"
 
-# Wasm
-# export WASMEDGE_DIR=$(brew --prefix wasmedge)
-
-# WASI SDK
-# export WASI_SDK_PATH="$HOME/sdk/wasi-sdk-22.0"
-# export CC="${WASI_SDK_PATH}/bin/clang --sysroot=${WASI_SDK_PATH}/share/wasi-sysroot"
-
 # mysql-client
 export PATH="/opt/homebrew/opt/mysql-client@8.4/bin:$PATH"
 
-# # openssl
-# export OPENSSL_LIB_DIR=$(brew --prefix openssl)/lib
-# export OPENSSL_INCLUDE_DIR=$(brew --prefix openssl)/include
