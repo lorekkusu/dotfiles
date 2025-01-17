@@ -14,7 +14,6 @@ ZSH_THEME="robbyrussell"
 ZSH_TMUX_AUTOSTART="false"
 ZSH_TMUX_AUTONAME_SESSION="true"
 plugins=(
-  autoenv
   brew
   colored-man-pages
   docker
@@ -32,7 +31,6 @@ plugins=(
   minikube
   nvm
   poetry
-  poetry-env
   pyenv
   rust
   tmux
