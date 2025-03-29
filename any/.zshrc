@@ -1,7 +1,7 @@
 # completion
 autoload -Uz compinit
 compinit
-eval "$(ngrok completion)"
+#eval "$(ngrok completion)"
 
 # lang
 export LANG=en_US.UTF-8
@@ -14,6 +14,8 @@ ZSH_THEME="robbyrussell"
 ZSH_TMUX_AUTOSTART="false"
 ZSH_TMUX_AUTONAME_SESSION="true"
 plugins=(
+  argocd
+  autoenv
   brew
   colored-man-pages
   docker
@@ -33,6 +35,7 @@ plugins=(
   poetry
   pyenv
   rust
+  skaffold
   tmux
   yarn
   z
