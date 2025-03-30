@@ -37,13 +37,7 @@ fi
 # Link dotfiles (any)
 echo "Linking dotfiles (any)"
 ln -svf $PWD/any/.gitconfig $HOME/.gitconfig
-ln -svf $PWD/any/.tmux.conf $HOME/.tmux.conf
+ln -svf $PWD/any/.hyper.js $HOME/.hyper.js
 ln -svf $PWD/any/.zshenv $HOME/.zshenv
 ln -svf $PWD/any/.zprofile $HOME/.zprofile
 ln -svf $PWD/any/.zshrc $HOME/.zshrc
-
-# Link others
-echo "Linking others"
-ln -svf $PWD/iterm $HOME/.config/iterm
-ln -svf $PWD/nvim $HOME/.config/nvim
-ln -svf $PWD/tmux $HOME/.config/tmux
