@@ -12,6 +12,7 @@ alias j="jump"
 ZSH_THEME="robbyrussell"
 plugins=(
   # SYSTEM
+  autoenv
   brew
   colored-man-pages
   extract
@@ -38,9 +39,6 @@ plugins=(
 
   # LANG
   nvm
-  poetry
-  pyenv
-  rust
 
   # PATH
   jump
