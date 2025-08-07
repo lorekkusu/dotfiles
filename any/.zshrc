@@ -9,7 +9,7 @@ export LANG=en_US.UTF-8
 alias j="jump"
 
 # oh-my-zsh
-ZSH_THEME="robbyrussell"
+ZSH_THEME="fino" # set by `omz`
 plugins=(
   # SYSTEM
   autoenv
@@ -38,6 +38,7 @@ plugins=(
   skaffold
 
   # LANG
+  flutter
   nvm
 
   # PATH

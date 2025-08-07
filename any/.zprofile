@@ -14,3 +14,9 @@ export NVM_HOMEBREW=$(brew --prefix nvm)
 # java
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+
+# rust
+export PATH="$(brew --prefix rust)/bin:$PATH"
+
+# flutter
+export PATH="$HOME/flutter/bin:$PATH"
