@@ -37,6 +37,7 @@ plugins=(
   kubectl
   helm
   k9s
+  kn
   kind
   minikube
 
