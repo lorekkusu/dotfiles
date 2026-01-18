@@ -46,10 +46,12 @@ plugins=(
   gcloud
 
   # DEV
+  gh
   uv
   nvm
   rust
   golang
+  docker
   fluxcd
   skaffold
 )
