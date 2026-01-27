@@ -8,4 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.local/bin:$PATH"
 
 # krew
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export PATH="$HOME/.krew/bin:$PATH"
+
+# go
+export PATH="$HOME/go/bin:$PATH"
