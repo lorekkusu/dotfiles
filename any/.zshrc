@@ -45,6 +45,7 @@ plugins=(
   aws
   azure
   gcloud
+  ngrok
 
   # DEV
   gh

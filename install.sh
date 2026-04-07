@@ -41,3 +41,4 @@ ln -svf $PWD/any/.hyper.js $HOME/.hyper.js
 ln -svf $PWD/any/.zshenv $HOME/.zshenv
 ln -svf $PWD/any/.zprofile $HOME/.zprofile
 ln -svf $PWD/any/.zshrc $HOME/.zshrc
+ln -svf $PWD/any/.copilot/mcp-config.json $HOME/.copilot/mcp-config.json
