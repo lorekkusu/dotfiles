@@ -1,0 +1,86 @@
+tap "anomalyco/tap"
+tap "fluxcd/tap"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Cloudflare Tunnel client (formerly Argo Tunnel)
+brew "cloudflared"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# GitHub command-line tool
+brew "gh"
+# Small git utilities
+brew "git-extras"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Kubernetes package manager
+brew "helm"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "k9s"
+# KubeConfig Manager
+brew "kubecm"
+# Kubernetes controller and tool for one-way encrypted Secrets
+brew "kubeseal"
+# Template-free customization of Kubernetes YAML manifests
+brew "kustomize"
+# Manage multiple Node.js versions
+brew "nvm"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
+# Rust toolchain installer
+brew "rustup"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Non-interactive SSH password auth
+brew "sshpass"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
+# The AI coding agent built for the terminal.
+brew "anomalyco/tap/opencode", trusted: true
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
+# Anthropic's official Claude AI desktop app
+cask "claude"
+# Terminal-based AI coding assistant
+cask "claude-code@latest"
+# AI code review CLI
+cask "coderabbit"
+# Write, edit, and chat about your code with AI
+cask "cursor"
+# Git client focusing on productivity
+cask "gitkraken"
+# JetBrains tools manager
+cask "jetbrains-toolbox"
+# Open-source cross-platform alternative to AirDrop
+cask "localsend"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Replacement for Docker Desktop
+cask "orbstack"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
+# Collection of apps available by subscription
+cask "setapp"
+# Team communication and collaboration software
+cask "slack"
+# Music streaming service
+cask "spotify"
+# Rust-based terminal
+cask "warp"
+vscode "anthropic.claude-code"
+vscode "anysphere.cursorpyright"
+vscode "anysphere.remote-containers"
+vscode "anysphere.remote-ssh"
+vscode "golang.go"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "rust-lang.rust-analyzer"
+vscode "svelte.svelte-vscode"
+go "golang.org/x/tools/cmd/deadcode"
+go "mvdan.cc/garble"
+go "github.com/golangci/golangci-lint/v2/cmd/golangci-lint"
+go "golang.org/x/tools/gopls"
+go "github.com/goreleaser/goreleaser/v2"
+go "github.com/wailsapp/wails/v2/cmd/wails"
+npm "corepack"
