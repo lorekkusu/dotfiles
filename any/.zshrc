@@ -38,3 +38,8 @@ plugins=(
 zstyle ':omz:plugins:nvm' lazy yes
 
 source $ZSH/oh-my-zsh.sh
+
+# expose nvm's node on PATH for child processes (e.g. claude statusline); nvm stays lazy
+if [[ -d "$HOME/.nvm/versions/node" ]]; then
+  path=("$HOME/.nvm/versions/node"/*/bin(N/Om[1]) $path)
+fi
