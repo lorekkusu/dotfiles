@@ -1,6 +1,3 @@
-# oh-my-zsh
-export ZSH="$HOME/.oh-my-zsh"
-
 # local
 export PATH="$HOME/.local/bin:$PATH"
 

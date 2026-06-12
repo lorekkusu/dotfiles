@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-DOTFILES_DIR="$(dirname "${BASH_SOURCE[0]}")"
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Install platform-specific packages first
 PLATFORM=$(uname)

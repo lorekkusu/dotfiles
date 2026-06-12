@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Allow sourcing from install.sh (which sets DOTFILES_DIR) or running standalone
-DOTFILES_DIR="${DOTFILES_DIR:-$(dirname "${BASH_SOURCE[0]}")}"
+DOTFILES_DIR="${DOTFILES_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)}"
 
 # Install Homebrew if not installed
 if ! command -v brew &> /dev/null; then
