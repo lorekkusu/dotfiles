@@ -10,6 +10,8 @@ brew "cloudflared"
 brew "ffmpeg"
 # GitHub command-line tool
 brew "gh"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # Small git utilities
 brew "git-extras"
 # Open source programming language to build simple/reliable/efficient software

@@ -1,7 +1,3 @@
-# completion
-autoload -Uz compinit
-compinit
-
 # lang
 export LANG=en_US.UTF-8
 
@@ -36,4 +32,8 @@ plugins=(
   golang
   vscode
 )
+
+# nvm: defer load until node/npm/npx/pnpm/yarn/corepack is first used
+zstyle ':omz:plugins:nvm' lazy yes
+
 source $ZSH/oh-my-zsh.sh

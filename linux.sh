@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
-sudo apt update
-sudo apt install iputils-ping
+sudo apt-get update
+sudo apt-get install -y iputils-ping

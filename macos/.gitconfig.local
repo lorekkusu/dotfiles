@@ -1,0 +1,19 @@
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+
+[commit]
+	gpgsign = true
+
+[core]
+    pager = delta
+
+[delta]
+    navigate = true
+    dark = true
+    side-by-side = true
+
+[interactive]
+    diffFilter = delta --color-only
