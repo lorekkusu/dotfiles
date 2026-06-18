@@ -1,3 +1,4 @@
+tap "minio/stable"
 # Cloudflare Tunnel client (formerly Argo Tunnel)
 brew "cloudflared"
 # Cryptography and SSL/TLS Toolkit
@@ -28,8 +29,12 @@ brew "nvm"
 brew "rustup"
 # Non-interactive SSH password auth
 brew "sshpass"
+# Command-line unarchiving tools supporting multiple formats
+brew "unar"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# MinIO Client for object storage and filesystems
+brew "minio/stable/mc", trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Anthropic's official Claude AI desktop app
