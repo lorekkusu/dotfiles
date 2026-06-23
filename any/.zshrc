@@ -43,3 +43,6 @@ source $ZSH/oh-my-zsh.sh
 if [[ -d "$HOME/.nvm/versions/node" ]]; then
   path=("$HOME/.nvm/versions/node"/*/bin(N/Om[1]) $path)
 fi
+
+# secrets (untracked, machine-local: e.g. ~/.zshrc.secrets)
+[[ -f "$HOME/.zshrc.secrets" ]] && source "$HOME/.zshrc.secrets"
