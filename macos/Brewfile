@@ -1,3 +1,4 @@
+tap "anomalyco/tap"
 tap "minio/stable"
 # Cloudflare Tunnel client (formerly Argo Tunnel)
 brew "cloudflared"
@@ -37,6 +38,8 @@ brew "uv"
 brew "minio/stable/mc", trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
+# Configuration manager for AI coding agents
+cask "cc-switch"
 # Terminal-based AI coding assistant
 cask "claude-code@latest"
 # OpenAI's coding agent that runs in your terminal
@@ -49,6 +52,8 @@ cask "gitkraken"
 cask "jetbrains-toolbox"
 # Open-source cross-platform alternative to AirDrop
 cask "localsend"
+# AI usage tracker for Cursor, Claude Code, Codex, Copilot and more
+cask "openusage"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Move and resize windows using keyboard shortcuts or snap areas
@@ -61,15 +66,8 @@ cask "slack"
 cask "spotify"
 # Rust-based terminal
 cask "warp"
-vscode "anthropic.claude-code"
-vscode "anysphere.cursorpyright"
 vscode "anysphere.remote-containers"
 vscode "anysphere.remote-ssh"
-vscode "golang.go"
-vscode "ms-python.debugpy"
-vscode "ms-python.python"
-vscode "rust-lang.rust-analyzer"
-vscode "svelte.svelte-vscode"
 go "golang.org/x/tools/cmd/deadcode"
 go "mvdan.cc/garble"
 go "github.com/golangci/golangci-lint/v2/cmd/golangci-lint"
