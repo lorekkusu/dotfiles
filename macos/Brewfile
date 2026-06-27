@@ -24,6 +24,8 @@ brew "kubecm"
 brew "kubeseal"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
 # Manage multiple Node.js versions
 brew "nvm"
 # Rust toolchain installer
@@ -34,6 +36,8 @@ brew "sshpass"
 brew "unar"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# The AI coding agent built for the terminal.
+brew "anomalyco/tap/opencode", trusted: true
 # MinIO Client for object storage and filesystems
 brew "minio/stable/mc", trusted: true
 # Password manager that keeps all passwords secure behind one password
@@ -48,12 +52,12 @@ cask "codex"
 cask "cursor"
 # Git client focusing on productivity
 cask "gitkraken"
+# Web browser
+cask "google-chrome"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
 # Open-source cross-platform alternative to AirDrop
 cask "localsend"
-# AI usage tracker for Cursor, Claude Code, Codex, Copilot and more
-cask "openusage"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Move and resize windows using keyboard shortcuts or snap areas
@@ -64,6 +68,8 @@ cask "setapp"
 cask "slack"
 # Music streaming service
 cask "spotify"
+# Video conferencing software
+cask "voov-meeting"
 # Rust-based terminal
 cask "warp"
 vscode "anysphere.remote-containers"
