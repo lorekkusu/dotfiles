@@ -1,4 +1,3 @@
-tap "anomalyco/tap"
 tap "minio/stable"
 # Cloudflare Tunnel client (formerly Argo Tunnel)
 brew "cloudflared"
@@ -36,18 +35,14 @@ brew "sshpass"
 brew "unar"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
-# The AI coding agent built for the terminal.
-brew "anomalyco/tap/opencode", trusted: true
 # MinIO Client for object storage and filesystems
 brew "minio/stable/mc", trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
-# Configuration manager for AI coding agents
-cask "cc-switch"
 # Terminal-based AI coding assistant
 cask "claude-code@latest"
-# OpenAI's coding agent that runs in your terminal
-cask "codex"
+# Tool to show live information about the batteries in various devices
+cask "coconutbattery"
 # Write, edit, and chat about your code with AI
 cask "cursor"
 # Git client focusing on productivity
