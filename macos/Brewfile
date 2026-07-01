@@ -25,6 +25,8 @@ brew "kubeseal"
 brew "kustomize"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
+# Easily convert Marp Markdown files into static HTML/CSS, PDF, PPT and images
+brew "marp-cli"
 # Manage multiple Node.js versions
 brew "nvm"
 # Rust toolchain installer
